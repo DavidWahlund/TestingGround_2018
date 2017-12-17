@@ -9,6 +9,10 @@ EBTNodeResult::Type UMyBTTaskNode::ExecuteTask(UBehaviorTreeComponent& OwnerComp
 	auto BlackboardComp = OwnerComp.GetBlackboardComponent();
 	auto Index = BlackboardComp->GetValueAsInt(IndexKey.SelectedKeyName);
 
+	
+	
+	//UPROPERTY(EditAnywhere, Category = "Blackboard")
+
 	UE_LOG(LogTemp, Warning, TEXT("Waypoint index: %i"), Index)
 	return EBTNodeResult::Succeeded;
 }
